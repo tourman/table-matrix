@@ -3,7 +3,7 @@
   "include": ["src", "types"],
   "compilerOptions": {
     "module": "esnext",
-    "types": ["node"],
+    "types": ["node", "jest"],
     "allowImportingTsExtensions": false
   }
 }
