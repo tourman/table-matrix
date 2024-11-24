@@ -11,6 +11,7 @@
     "src"
   ],
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "analyze": "size-limit --why",
     "build": "dts build",
     "lint": "dts lint",
@@ -33,7 +34,6 @@
   "jest": {
     "testEnvironment": "node"
   },
-  "peerDependencies": {},
   "engines": {
     "node": ">=12"
   },
@@ -50,6 +50,7 @@
   "devDependencies": {
     "@size-limit/preset-small-lib": "^11.1.6",
     "@tsconfig/recommended": "^1.0.8",
+    "@types/node": "^22.9.3",
     "dts-cli": "^2.0.5",
     "husky": "^9.1.7",
     "size-limit": "^11.1.6",
